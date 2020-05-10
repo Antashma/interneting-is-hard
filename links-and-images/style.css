@@ -15,6 +15,10 @@ h1 {
   border-bottom: 1px dotted black;
 }
 
+h2 {
+  color: #C12267;
+}
+
 a {
   font-family: 'Sacramento', cursive;
   font-size:1.5em;
@@ -28,7 +32,20 @@ a:hover {
 }
 
 .sidenote {
-  padding:5px 20px;
+  position: relative;
+  margin-top:10px;
+  padding:15px 20px;
   font-size:0.8em;
   background: mistyrose;
+}
+
+.sidenote::before {
+  content: "Note!";
+  padding: 5px;
+  position: absolute;
+  top: -10px; left:-10px;
+  background: #C12267;
+  color: floralwhite;
+  font-weight: bold;
+
 }
