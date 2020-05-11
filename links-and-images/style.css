@@ -8,20 +8,38 @@
 body {
   padding:100px;
   border: 20px solid #C12267;
-  background: floralwhite;
+  background: url('images/hip-square.png') repeat floralwhite;
   font-family: monospace;
   font-size: 20px;
   color: #583759; /*plum purple*/
 }
 
 h1 {
+  position: relative;
   padding-bottom: 5px;
+  width:500px;
+  text-align:center;
   font-family: 'Sacramento', cursive;
   font-size:2.5em;
   color: #C12267; /*burnt pink*/
-  border-bottom: 1px solid #333;
+  border-bottom: 1px dotted #333;
 }
 
+h1::before, h1::after {
+  content: 'o';
+
+  position:absolute;
+  top:68px; left:-10px;
+
+  font-family: monospace;
+  font-weight: normal;
+  font-size:0.3em;
+  color:#333;
+
+}
+ h1::after {
+   left:500px;
+ }
 
 h2 {
   color: #C12267;
