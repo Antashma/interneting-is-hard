@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: monospace;
+  font-size: 1.8rem;
+}
+
+nav {
+  background: black;
+}
+
+nav .nav-a-wrapper {
+  width:80%;
+  margin: 0 auto;
+  padding:10px 0;
+}
+
+nav a:link {
+   color: floralwhite;
+   text-decoration: none;
+   text-align: center;
+ }
+
+h1, h2 {
+  font-family: 'Chelsea Market', cursive;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+h1::before, h1::after {
+  content:'__________';
+  position: relative;
+  top:-10px;
+}
+
+h1::before {
+  margin: 0 10px 0 10%;
+}
+
+h1::after {
+  margin: 0 10% 0 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.container {
+  background: silver;
+  overflow: hidden;
+}
+
+.page {
+  width: 800px;
+  margin: 0 auto;
+  /* border: 2px solid lime; */
+  overflow:hidden;
+  background: silver;
+}
+
+.menu {
+  background: dodgerblue;
+}
+
+.tagline {
+  margin: 10px 0;
+  font-style: italic;
+  text-align: center;
+}
+
+.sidebar {
+  padding:20px;
+  float: left;
+  width: 25%;
+  background: crimson;
+  overflow: hidden;
+}
+
+.featured {
+  margin: 10px 0;
+  background: url(https://picsum.photos/400?grayscale);
+  height: 150px;
+  position: relative;
+  border: 2px solid black;
+}
+
+.featured h3 {
+  background: black;
+  color:floralwhite;
+  position: absolute;
+  bottom:0;
+  right:0;
+  opacity: 0.7;
+}
+
+.content {
+  float: left;
+  padding: 20px;
+  width: 75%;
+  background: orange;
+}
+
+.article-image {
+  float: left;
+  margin: 0 20px 20px 0;
+  width:300px;
+  height: 200px;
+  border:2px solid black;
+
+}
+
+.comment-box {
+  padding: 20px;
+  clear: both;
+  overflow: hidden;
+  background: lightskyblue;
+}
+
+.column {
+  float: left;
+  width: 47%;
+  height: 200px;
+  margin: 20px 1.15%;
+  background: cornflowerblue;
+}
+
+.avatar {
+  float: left;
+  width:60px;
+  height: 60px;
+  margin: 25px;
+  border-radius: 40px;
+  background: url('https://picsum.photos/id/237/120') powderblue center;
+}
+
+.username {
+  margin-top: 20px;
+  background: lemonchiffon;
+}
+
+.comment {
+  margin: 10px;
+  padding:10px;
+  background: floralwhite;
+  overflow: hidden;
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 20px;
+  background: black;
+  color:floralwhite;
+}
+
+.footer p {
+  text-align: center;
+}
